@@ -1,3 +1,4 @@
+import 'package:dayzer_ui/widgets/bottom_elevated_button.dart';
 import 'package:flutter/material.dart';
 
 class IntroScreen extends StatelessWidget {
@@ -42,6 +43,33 @@ class IntroScreen extends StatelessWidget {
                   fontSize: 36,
                   fontWeight: FontWeight.w900,
                 ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Image.asset(
+                'assets/images/intro_screen_center_img.png',
+                height: 400,
+                width: double.infinity,
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              const Text(
+                "Controlling deliveries in\nrelaiable and no-hassle way.",
+                style: TextStyle(
+                  fontWeight: FontWeight.w700,
+                  fontSize: 18,
+                ),
+              ),
+              const SizedBox(
+                height: 50,
+              ),
+              BottomElevatedButton(
+                onPress: () {
+                  print('Bottom btn pressed !!!');
+                },
+                buttonLabel: 'Get free trail',
               )
             ],
           ),
